@@ -344,33 +344,74 @@ ul {
   header {
     flex-direction: column;
     align-items: flex-start;
-    padding: 0.7rem 0.2rem 0.4rem 0.2rem;
-  }
-  .header-title h1 {
-    font-size: 1.08rem;
-  }
-  .trust-name {
-    font-size: 0.79rem;
-  }
-  .logo {
-    width: 44px;
+    padding: 1.2rem 0.4rem 0.7rem 0.4rem;
   }
   .header-left {
-    gap: 0.3rem;
+    gap: 0.7rem;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .logo {
+    width: 70px;
+    min-width: 70px;
+    max-width: 90px;
+    margin-left: 0.5rem;
+  }
+  .header-title {
+    gap: 0.18rem;
+  }
+  .header-title h1 {
+    font-size: 1.55rem;
+    font-weight: 700;
+    line-height: 1.13;
+  }
+  .trust-name {
+    font-size: 1.03rem;
+    font-weight: 600;
+  }
+  /* Hamburger icon */
+  .nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    margin: 0.7rem 0 0 0.7rem;
+    cursor: pointer;
+    z-index: 101;
+    position: absolute;
+    top: 1.1rem;
+    right: 1.1rem;
   }
   nav {
+    display: none;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.2rem;
+    gap: 0.5rem;
     width: 100%;
-    overflow-x: auto;
+    background: #12326b;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 0.6rem 0.6rem 0.8rem 1.1rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    border-radius: 0 0 1rem 1rem;
+    z-index: 100;
+  }
+  nav.active {
+    display: flex;
   }
   nav a {
-    font-size: 0.92rem;
-    padding: 0.4rem 0.1rem;
-    margin: 0.2rem 0;
+    font-size: 1.08rem;
+    padding: 0.7rem 0.2rem;
+    margin: 0.1rem 0;
     width: 100%;
     display: block;
+    border-radius: 0.4rem;
+    text-align: left;
+    background: none;
+    color: #fff;
   }
   .hero, .events-news, .testimonials, .quick-enquiry {
     max-width: 100vw;
@@ -384,43 +425,49 @@ ul {
   }
   .download-btn, .quick-enquiry button {
     padding: 0.6rem 1.2rem;
-    font-size: 0.98rem;
+    font-size: 1.08rem;
   }
   .quick-enquiry input {
-    font-size: 0.95rem;
-    padding: 0.5rem;
+    font-size: 1.01rem;
+    padding: 0.6rem;
   }
   footer {
-    font-size: 0.95rem;
+    font-size: 1.01rem;
     padding: 0.4rem 0;
   }
 }
+
 @media (max-width: 400px) {
   header {
-    padding: 0.4rem 0.1rem 0.2rem 0.1rem;
+    padding: 0.7rem 0.05rem 0.2rem 0.05rem;
   }
   .logo {
-    width: 32px;
+    width: 55px;
+    min-width: 40px;
+    max-width: 70px;
   }
   .header-title h1 {
-    font-size: 0.85rem;
+    font-size: 1.08rem;
+    font-weight: 700;
   }
   .trust-name {
-    font-size: 0.6rem;
+    font-size: 0.82rem;
+    font-weight: 600;
   }
   .hero, .events-news, .testimonials, .quick-enquiry {
     border-radius: 0.4rem;
     padding: 0.3rem 0.05rem;
   }
   .testimonial-card {
-    min-width: 110px;
+    min-width: 90px;
     font-size: 0.9rem;
   }
   nav a {
-    font-size: 0.89rem;
-    padding: 0.2rem 0.05rem;
+    font-size: 1rem;
+    padding: 0.35rem 0.05rem;
   }
 }
+
 
 /* Prevent horizontal scroll */
 html, body {
