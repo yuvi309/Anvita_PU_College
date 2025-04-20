@@ -15,7 +15,10 @@
         <h1>Anvitha Pre-University College</h1>
       </div>
     </div>
-    <nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-controls="mainNav" aria-expanded="false" style="display:none;">
+      &#9776;
+    </button>
+    <nav id="mainNav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="courses.html">Courses</a>
@@ -87,5 +90,28 @@
   <footer>
     &copy; 2025 Anvitha Pre-University College, Sindhanur
   </footer>
+<script>
+// Hamburger menu toggle for mobile
+const navToggle = document.getElementById('navToggle');
+const mainNav = document.getElementById('mainNav');
+function checkMobile() {
+  if (window.innerWidth <= 600) {
+    navToggle.style.display = 'block';
+    mainNav.classList.remove('active');
+    navToggle.setAttribute('aria-expanded', 'false');
+  } else {
+    navToggle.style.display = 'none';
+    mainNav.classList.remove('active');
+    navToggle.setAttribute('aria-expanded', 'false');
+  }
+}
+navToggle.addEventListener('click', function() {
+  mainNav.classList.toggle('active');
+  const expanded = mainNav.classList.contains('active');
+  navToggle.setAttribute('aria-expanded', expanded);
+});
+window.addEventListener('resize', checkMobile);
+document.addEventListener('DOMContentLoaded', checkMobile);
+</script>
 </body>
 </html>
