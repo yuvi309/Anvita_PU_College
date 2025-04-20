@@ -1,0 +1,429 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f6f8fa;
+  color: #222;
+}
+header {
+  background: #12326b;
+  color: #fff;
+  padding: 0.7rem 0 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.logo {
+  width: 78px;
+  margin-bottom: 0;
+  margin-left: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.header-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
+}
+.header-title h1 {
+  margin: 0;
+  font-size: 2.1rem;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  line-height: 1.15;
+}
+.trust-name {
+  font-size: 1.08rem;
+  color: #ffd700;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+}
+@media (max-width: 800px) {
+  .header-title h1 {
+    font-size: 1.5rem;
+  }
+  .trust-name {
+    font-size: 0.97rem;
+  }
+}
+@media (max-width: 500px) {
+  .header-title h1 {
+    font-size: 1.08rem;
+  }
+  .trust-name {
+    font-size: 0.79rem;
+  }
+  .logo {
+    width: 54px;
+  }
+  .header-left {
+    gap: 0.5rem;
+  }
+}
+.header-title h2 {
+  margin: 0;
+  font-size: 1rem;
+  color: #e3ebff;
+  font-weight: 400;
+}
+nav {
+  margin: 0 1.5rem 0 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0.6rem;
+  font-weight: 500;
+  font-size: 1.05rem;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: #ffd700;
+}
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+  }
+  .header-left {
+    margin-bottom: 0.7rem;
+    margin-left: 0;
+  }
+  nav {
+    margin: 0 0 0.5rem 0;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+}
+
+.hero {
+  background: linear-gradient(90deg, #e3ebff 60%, #dbeafe 100%);
+  text-align: center;
+  padding: 2rem 1rem;
+  border-radius: 1.5rem;
+  margin: 2rem auto 2rem auto;
+  max-width: 700px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+}
+.location {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+.streams {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+.streams span {
+  background: #12326b;
+  color: #fff;
+  padding: 0.4rem 1.2rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+footer {
+  background: #12326b;
+  color: #fff;
+  text-align: center;
+  padding: 0.7rem 0;
+  margin-top: 2rem;
+}
+
+ul {
+  text-align: left;
+  display: inline-block;
+  margin: 0 auto;
+  padding-left: 1.2rem;
+}
+
+/* Advanced Features */
+.download-btn {
+  display: inline-block;
+  margin: 1.2rem auto 0 auto;
+  padding: 0.7rem 2.2rem;
+  background: linear-gradient(90deg, #2056a7, #12326b);
+  color: #fff;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  transition: background 0.2s, transform 0.2s;
+}
+.download-btn:hover {
+  background: linear-gradient(90deg, #12326b, #2056a7);
+  transform: scale(1.04);
+}
+
+.events-news {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+  margin: 2rem auto;
+  padding: 1.2rem 1.5rem;
+  max-width: 600px;
+}
+.events-news h3 {
+  color: #2056a7;
+  margin-bottom: 0.8rem;
+}
+.events-news ul {
+  padding-left: 1.1rem;
+}
+.events-news li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.testimonials {
+  margin: 2.5rem auto;
+  max-width: 700px;
+  text-align: center;
+}
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.testimonial-card {
+  background: #e3ebff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 1.2rem 1.2rem 0.8rem 1.2rem;
+  min-width: 220px;
+  max-width: 260px;
+  transition: box-shadow 0.2s, transform 0.2s;
+  position: relative;
+  opacity: 0.92;
+  animation: fadeIn 1.2s;
+}
+.testimonial-card:hover {
+  box-shadow: 0 6px 24px rgba(32,86,167,0.13);
+  transform: translateY(-5px) scale(1.03);
+  opacity: 1;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 0.92; transform: translateY(0); }
+}
+.testimonial-card p {
+  font-style: italic;
+  margin-bottom: 0.7rem;
+  color: #2056a7;
+}
+.testimonial-card span {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.quick-enquiry {
+  background: linear-gradient(90deg, #f6f8fa 60%, #e3ebff 100%);
+  border-radius: 1rem;
+  max-width: 500px;
+  margin: 2.5rem auto 0 auto;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+  padding: 1.5rem 1rem 1.2rem 1rem;
+}
+.quick-enquiry h3 {
+  color: #2056a7;
+  margin-bottom: 0.8rem;
+}
+.quick-enquiry form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.quick-enquiry input {
+  padding: 0.7rem;
+  border-radius: 0.8rem;
+  border: 1px solid #b7c4d8;
+  font-size: 1rem;
+}
+.quick-enquiry button {
+  background: linear-gradient(90deg, #2056a7, #12326b);
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.7rem 2rem;
+  font-size: 1.05rem;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.quick-enquiry button:hover {
+  background: linear-gradient(90deg, #12326b, #2056a7);
+  transform: scale(1.04);
+}
+
+@media (max-width: 1200px) {
+  .hero, .events-news, .testimonials, .quick-enquiry {
+    max-width: 90vw;
+  }
+}
+@media (max-width: 992px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 1rem 0.5rem 1rem;
+  }
+  .header-left {
+    margin-bottom: 0.7rem;
+    margin-left: 0;
+  }
+  nav {
+    margin: 0 0 0.5rem 0;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .hero, .events-news, .testimonials, .quick-enquiry {
+    max-width: 95vw;
+    padding: 1.2rem 0.7rem;
+  }
+}
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+  }
+  .header-left {
+    margin-bottom: 0.7rem;
+    margin-left: 0;
+  }
+  nav {
+    margin: 0 0 0.5rem 0;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .hero, .events-news, .testimonials, .quick-enquiry {
+    max-width: 98vw;
+    padding: 1rem 0.3rem;
+  }
+  .testimonial-cards {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  nav a {
+    margin: 0 0.5rem;
+    font-size: 0.98rem;
+  }
+}
+@media (max-width: 700px) {
+  .hero, .events-news, .testimonials, .quick-enquiry {
+    max-width: 99vw;
+    padding: 0.8rem 0.1rem;
+  }
+  .testimonial-cards {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  nav a {
+    margin: 0 0.4rem;
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.7rem 0.2rem 0.4rem 0.2rem;
+  }
+  .header-title h1 {
+    font-size: 1.08rem;
+  }
+  .trust-name {
+    font-size: 0.79rem;
+  }
+  .logo {
+    width: 44px;
+  }
+  .header-left {
+    gap: 0.3rem;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+    width: 100%;
+    overflow-x: auto;
+  }
+  nav a {
+    font-size: 0.92rem;
+    padding: 0.4rem 0.1rem;
+    margin: 0.2rem 0;
+    width: 100%;
+    display: block;
+  }
+  .hero, .events-news, .testimonials, .quick-enquiry {
+    max-width: 100vw;
+    padding: 0.5rem 0.1rem;
+    border-radius: 0.7rem;
+  }
+  .testimonial-card {
+    min-width: 160px;
+    max-width: 95vw;
+    padding: 0.7rem 0.5rem 0.5rem 0.5rem;
+  }
+  .download-btn, .quick-enquiry button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.98rem;
+  }
+  .quick-enquiry input {
+    font-size: 0.95rem;
+    padding: 0.5rem;
+  }
+  footer {
+    font-size: 0.95rem;
+    padding: 0.4rem 0;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    padding: 0.4rem 0.1rem 0.2rem 0.1rem;
+  }
+  .logo {
+    width: 32px;
+  }
+  .header-title h1 {
+    font-size: 0.85rem;
+  }
+  .trust-name {
+    font-size: 0.6rem;
+  }
+  .hero, .events-news, .testimonials, .quick-enquiry {
+    border-radius: 0.4rem;
+    padding: 0.3rem 0.05rem;
+  }
+  .testimonial-card {
+    min-width: 110px;
+    font-size: 0.9rem;
+  }
+  nav a {
+    font-size: 0.89rem;
+    padding: 0.2rem 0.05rem;
+  }
+}
+
+/* Prevent horizontal scroll */
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
